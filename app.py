@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 model = joblib.load('model.pkl')
-prediction = model.predict([features])
+prediction = model.predict(['features_names.pkl'])
 
 st.title("🌲 Forest Cover Type Prediction")
 
