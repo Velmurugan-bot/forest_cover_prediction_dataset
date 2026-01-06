@@ -7,8 +7,8 @@ prediction = model.predict(['features_names.pkl'])
 
 st.title("🌲 Forest Cover Type Prediction")
 
-elevation = st.number_input('Elevation' 0, 4000, step=1)
-aspect = st.number_input('Aspect' 0, 360, step=1)
+elevation = st.number_input('Elevation',0, 4000, step=1)
+aspect = st.number_input('Aspect',0, 360, step=1)
 slope = st.number_input("Slope", 0, 90, step=1)
 hd_hydrology = st.number_input('Horizontal_Distance_To_Hydrology', step=1)
 vd_hydrology = st.number_input('Vertical_Distance_To_Hydrology', step=1)
