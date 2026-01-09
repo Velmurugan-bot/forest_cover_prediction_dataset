@@ -21,12 +21,12 @@ hd_fire_points = st.number_input("Horizontal Distance to Fire Points", step=1)
 soil_type = st.selectbox("Soil Type (0–39)", list(range(40)))
 soil_encoded = [0] * 40
 soil_encoded[soil_type] = 1
-wilderness = st.selectbox("Wilderness Area", ["Rawah", "Neota", "Comanche Peak", "Cache la Poudre"])
+wilderness = st.selectbox("Wilderness Area", ["Wilderness Area 1", "Wilderness Area 2", "Wilderness Area 3", "Wilderness Area 4"])
 wilderness_map = {
-    "Rawah": [1, 0, 0, 0],
-    "Neota": [0, 1, 0, 0],
-    "Comanche Peak": [0, 0, 1, 0],
-    "Cache la Poudre": [0, 0, 0, 1]
+    "Wilderness Area 1": [1, 0, 0, 0],
+    "Wilderness Area 2": [0, 1, 0, 0],
+    "Wilderness Area 3": [0, 0, 1, 0],
+    "Wilderness Area 4": [0, 0, 0, 1]
 }
 
 if st.button("Predict Cover Type"):
